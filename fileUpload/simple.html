@@ -1,0 +1,11 @@
+<html>
+<body>
+    <form action="./simple.php" method="post" enctype="multipart/form-data">
+    <!-- action指向后台的上传处理脚本 method必须为post方式 同时要指明enctype的值为"multipart/form-data"用来处理二进制的数据-->
+        <label for="file">Filename:</label>
+        <input type="file" name="file" id="file" /> 
+        <!-- type类型为"file" -->
+        <input type="submit" name="submit" value="Submit" />
+    </form>
+</body>
+</html>   

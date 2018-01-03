@@ -17,3 +17,41 @@
 	- index.php ： 转换sql格式的php脚本，可以随意自己定制
 
 	- industry.sql ： 原格式sql
+
+## messageQueue (消息队列) ： 
+
+	- in.php ： 入队脚本
+
+	- out.php ： 出队脚本
+
+*相对于php来说操作系统级别的事件还是用shell好，所以这里只要把这两个脚本用crontab做个定时任务就好了*
+
+## encryption （加密相关）
+
+	- asymmetric.php ： 使用openssl实现非对称加密
+
+	- oneway.php ： 单向散列加密
+
+	- priv.key ： 非对称加密生成的私钥
+
+	- pub.key ： 非对称加密生成的公钥
+
+	- symmetric.php ： 对称加密
+
+## fileUpload （文件表单上传）
+
+	- static ： fileUpload插件用到的静态资源
+
+	- vendor ： composer的包，主要是七牛云存储的
+
+	- advanced.html ： 插件版本文件上传的静态页面
+
+	- advanced.php ： 插件版本文件上传的后台处理脚本
+
+	- composer.json ： composer的配置，可以不用管
+
+	- simple.html ： 简单版文件上传的静态页面
+
+	- simple.php : 简单版文件上传的后台处理脚本
+
+*一共分为简单版和插件版文件上传方式，简单版就simple.html和simple.php就够了，插件版都不能少*
