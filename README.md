@@ -55,3 +55,9 @@
 	- simple.php : 简单版文件上传的后台处理脚本
 
 *一共分为简单版和插件版文件上传方式，简单版就simple.html和simple.php就够了，插件版都不能少*
+
+## algorithm （常用算法）
+
+	- search.php ： 查找，主要是二分法查找
+
+	- sort.php ： 排序，冒泡排序，选择排序，插入排序，快速排序
